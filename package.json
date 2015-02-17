@@ -1,0 +1,13 @@
+{
+	"version": "0.0.1",
+  	"private": true,
+  	"name": "react-express-sample-app",
+ 	"description": "A Node app sample app running on express-react-views",
+  	"repository": "https://github.com/k-ori/hello-world-node",
+  	"license": "MIT",
+  	"dependencies": {
+		"express": "~4.11.1",
+		"express-react-views": "~0.7.1"
+  	},
+  	"scripts": {}
+}
