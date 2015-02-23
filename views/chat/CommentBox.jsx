@@ -1,4 +1,5 @@
 var React = require('react'),
+    $ = require('jquery'),
     CommentList = require('./CommentList.jsx'),
     CommentForm = require('./CommentForm.jsx');
 
