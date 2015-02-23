@@ -6,8 +6,11 @@ var DefaultLayout = React.createClass({
 	    <html>
 	        <head>
 		    <title>{this.props.title}</title>
-		    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-		    <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+		    {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/JSXTransformer.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		    <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script> */}
+		    <script src="public/templates/index.js"></script>
 		</head>
 	        <body>{this.props.children}</body>
 	    </html>

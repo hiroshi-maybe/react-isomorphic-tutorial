@@ -1,6 +1,6 @@
 var React = require('react'),
-    DefaultLayout = require('../layouts/default'),
-    CommentBox = require('./CommentBox');
+    DefaultLayout = require('../layouts/default.jsx'),
+    CommentBox = require('./CommentBox.jsx');
 
 var HelloMessage = React.createClass({
    render: function() {
