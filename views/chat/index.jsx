@@ -4,14 +4,9 @@ var React = require('react'),
 
 var HelloMessage = React.createClass({
    render: function() {
-	var data = [
-	    {author: "Pete Hunt", text: "This is one comment"},
-	    {author: "Jordan Walke", text: "This is *another* comment"}
-	];
-
 	return (
 	    <DefaultLayout title={this.props.title}>
-		<CommentBox data={data} />
+		<CommentBox data={this.props.data} />
 	        <div>Hello {this.props.name}</div>
 	    </DefaultLayout>
 	);

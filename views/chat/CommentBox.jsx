@@ -25,10 +25,11 @@ module.exports = React.createClass({
 	setInterval(this.loadCommentsFromServer, this.props.pollInterval);
     },
     render: function() {
+	var mydata = this.state.data.length === 0 ? this.props.data : this.state.data;
 	return (
 	    <div className="commentBox">
 		<h1>Comments</h1>
-		<CommentList data={this.state.data} />
+		<CommentList data={mydata} />
 		<CommentForm />
 	    </div>
 	);
