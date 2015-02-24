@@ -11,7 +11,7 @@ var options = {
   }
 };
 
-app.engine('jsx', require('express-react-views').createEngine(options));
+app.engine('jsx', require('./lib/express-react-views').createEngine(options));
 app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', require('./routes').index);

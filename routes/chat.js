@@ -4,5 +4,10 @@ var data = [
 ];
 
 module.exports = function(req, res){
-  res.render('chat/index', {  title: 'Express', name: 'John', data: data });
+  res.render('chat/index', {
+    title: 'Express',
+    name: 'John',
+    data: data,
+    initialData: JSON.stringify(data)
+  });
 };
