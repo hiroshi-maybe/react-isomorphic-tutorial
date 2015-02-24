@@ -9,7 +9,7 @@ module.exports = React.createClass({
     },
     loadCommentsFromServer: function() {
 	$.ajax({
-	    url: this.props.url,
+	    url: "/chat/comments",
 	    dataType: 'json',
 	    success: function(data) {
 		this.setState({data: data});

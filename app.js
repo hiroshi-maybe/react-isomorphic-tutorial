@@ -15,7 +15,7 @@ app.engine('jsx', require('./lib/express-react-views').createEngine(options));
 app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', require('./routes').index);
-app.get('/chat', require('./routes/chat'));
+app.use('/chat', require('./routes/chat'));
 
 var server = app.listen(3000, function () {
   var host = server.address().address,
