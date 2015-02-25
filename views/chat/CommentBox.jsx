@@ -5,7 +5,7 @@ var React = require('react'),
 
 module.exports = React.createClass({
     getInitialState: function() {
-	return {data: []};
+	return {data: this.props.data};
     },
     loadCommentsFromServer: function() {
 	$.ajax({
@@ -22,15 +22,14 @@ module.exports = React.createClass({
     componentDidMount: function() {
 	console.log("did mount...");
 	this.loadCommentsFromServer();
-	setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+//	setInterval(this.loadCommentsFromServer, this.props.pollInterval);
     },
     render: function() {
-	var mydata = this.state.data.length === 0 ? this.props.data : this.state.data;
 	return (
 	    <div className="commentBox">
 		<h1>Comments</h1>
-		<CommentList data={mydata} />
-		<CommentForm />
+		<CommentList data={this.state.data} />
+		{/*<CommentForm />*/}
 	    </div>
 	);
     }

@@ -7,6 +7,7 @@ var data = [
 
 router.get('/', function(req, res, next) {
   res.render('chat/index', {
+    layout: req.app.settings['views'] + '/layouts/content',
     title: 'Express',
     name: 'John',
     data: data,
