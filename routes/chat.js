@@ -1,8 +1,8 @@
 var express = require('express'),
     router = express.Router();
 var data = [
-  {"author": "Pete Hunt", "text": "This is one comment from server"},
-  {"author": "Jordan Walke", "text": "This is *another* comment from server"}
+  {id: 1, "author": "Pete Hunt", "text": "This is one comment from server"},
+  {id: 2, "author": "Jordan Walke", "text": "This is *another* comment from server"}
 ];
 
 router.get('/', function(req, res, next) {
