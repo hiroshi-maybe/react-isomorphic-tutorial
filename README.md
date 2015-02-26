@@ -18,10 +18,16 @@ $ grunt build
 Start the server:
 
 ```bash
-node app.js
+$ node app.js
 ```
 
-Access http://localhost:3000/chat on your browser.
+Access [http://localhost:3000/chat](http://localhost:3000/chat) on your browser.
+
+If you want to update `public/bundle/index.js` incrementally...
+
+```
+$ grunt watch
+```
 
 ## Implementation note
 - Revamped [express-react-views](https://github.com/reactjs/express-react-views) to hook partial template on client rendering
