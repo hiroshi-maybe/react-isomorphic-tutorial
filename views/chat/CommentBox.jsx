@@ -21,7 +21,7 @@ module.exports = React.createClass({
     },
     componentDidMount: function() {
 	this.loadCommentsFromServer();
-//	setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+	setInterval(this.loadCommentsFromServer, this.props.pollInterval);
     },
     handleCommentSubmit: function(comment) {
 	$.ajax({
