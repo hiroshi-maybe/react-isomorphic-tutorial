@@ -6,7 +6,6 @@ if (typeof window !== 'undefined') {
     $(function() {
 	var containerEl = document.getElementById('content'),
 	    data = JSON.parse(document.getElementById('initial-data').innerHTML);
-	console.log(data);
 	React.render(
 	    <CommentBox data={data} />,
 	    containerEl
