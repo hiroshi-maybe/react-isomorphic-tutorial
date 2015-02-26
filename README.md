@@ -1,6 +1,6 @@
 # React-isomorphic-tutorial
 
-[React Tutorial](http://facebook.github.io/react/docs/tutorial.html) with server side rendering and client hook.
+[React Tutorial](http://facebook.github.io/react/docs/tutorial.html) with server side rendering and client hook. Original tutorial just describes client rendering. I implemented the sample app by isomorphic approach.
 
 ## How to run this app?
 Install dependencies:
