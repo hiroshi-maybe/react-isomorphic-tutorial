@@ -1,4 +1,5 @@
-var express = require('express');
+var express = require('express'),
+    bodyParser = require('body-parser');;
 
 var app = express();
 
@@ -13,6 +14,8 @@ var options = {
 
 app.engine('jsx', require('./lib/express-react-views').createEngine(options));
 app.use('/public', express.static(__dirname + '/public'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', require('./routes').index);
 app.use('/chat', require('./routes/chat'));

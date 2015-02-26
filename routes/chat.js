@@ -19,4 +19,15 @@ router.get('/comments', function(req, res, next) {
   res.json(data);
 });
 
+router.post('/comment', function(req, res, next) {
+  var nextId = data[data.length-1].id + 1;
+console.log(req.body);
+  data.push({
+    id: nextId,
+    author: req.body.author,
+    text: req.body.text
+  });
+  res.json(data);
+});
+
 module.exports = router;

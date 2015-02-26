@@ -8,7 +8,7 @@ module.exports = React.createClass({
 	if (!text || !author) {
 	    return;
 	}
-	// TODO: send request to the server
+	this.props.onCommentSubmit({author: author, text: text});
 	this.refs.author.getDOMNode().value = '';
 	this.refs.text.getDOMNode().value = '';
     },
